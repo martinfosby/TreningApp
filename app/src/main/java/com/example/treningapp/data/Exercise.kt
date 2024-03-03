@@ -36,6 +36,7 @@ data class Exercise(
     val sets: Int,
     @StringRes val description: Int,
     var completed: Boolean = false,
+    var wasCompleted: Boolean = false,
     var setsCompleted: Int = 0,
     var setsSwitches: MutableList<Boolean> = MutableList(sets) { false }, // Initialize the list with the size of sets
     val type: ExerciseType,

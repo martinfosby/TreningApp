@@ -344,12 +344,31 @@ fun SwitchSet(exercise: Exercise, index: Int) {
             exercise.completed = exercise.setsCompleted == exercise.sets
             if (exercise.type == ExerciseType.STRENGTH) {
                 strengthExercises.setsCompleted += if (isChecked) 1 else -1
-                if (exercise.completed) strengthExercises.exercisesCompleted++
+                if (exercise.completed) {
+                    strengthExercises.exercisesCompleted++
+                    exercise.wasCompleted = true
+                }
+                else if (!exercise.completed && exercise.wasCompleted) {
+                    strengthExercises.exercisesCompleted--
+                    exercise.wasCompleted = false
+                }
+                else {
+                    exercise.wasCompleted = false
+                }
             }
             else if (exercise.type == ExerciseType.ENDURANCE) {
                 enduranceExercises.setsCompleted += if (isChecked) 1 else -1
-                if (exercise.completed) enduranceExercises.exercisesCompleted++
-            }
+                if (exercise.completed) {
+                    enduranceExercises.exercisesCompleted++
+                    exercise.wasCompleted = true
+                }
+                else if (!exercise.completed && exercise.wasCompleted) {
+                    enduranceExercises.exercisesCompleted--
+                    exercise.wasCompleted = false
+                }
+                else {
+                    exercise.wasCompleted = false
+                }            }
 
         },
         modifier = Modifier.padding(dimensionResource(id = R.dimen.padding_medium))
