@@ -53,6 +53,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.AnnotatedString
 import androidx.compose.ui.text.SpanStyle
 import androidx.compose.ui.text.style.TextDecoration
+import androidx.compose.ui.unit.sp
 import com.example.treningapp.data.EnduranceExercises
 import com.example.treningapp.data.Exercise
 import com.example.treningapp.data.ExerciseType
@@ -149,20 +150,22 @@ fun AmountText(program: ExerciseType, modifier: Modifier = Modifier) {
 @Composable
 fun ExerciseList(program: ExerciseType, paddingValues: PaddingValues, modifier: Modifier = Modifier) {
     LazyColumn(contentPadding = paddingValues) {
-        if (program == ExerciseType.STRENGTH) {
-            items(strengthExercises.list) { exercise ->
-                ExerciseItem(
-                    exercise = exercise,
-                    modifier = Modifier.padding(dimensionResource(R.dimen.padding_small))
-                )
+        when (program) {
+            ExerciseType.STRENGTH -> {
+                items(strengthExercises.list) { exercise ->
+                    ExerciseItem(
+                        exercise = exercise,
+                        modifier = Modifier.padding(dimensionResource(R.dimen.padding_small))
+                    )
+                }
             }
-        }
-        if (program == ExerciseType.ENDURANCE) {
-            items(enduranceExercises.list) { exercise ->
-                ExerciseItem(
-                    exercise = exercise,
-                    modifier = Modifier.padding(dimensionResource(R.dimen.padding_small))
-                )
+            ExerciseType.ENDURANCE -> {
+                items(enduranceExercises.list) { exercise ->
+                    ExerciseItem(
+                        exercise = exercise,
+                        modifier = Modifier.padding(dimensionResource(R.dimen.padding_small))
+                    )
+                }
             }
         }
     }
@@ -261,13 +264,14 @@ fun ExerciseItem(
 fun ClickableLink(url: String) {
     val uriHandler = LocalUriHandler.current
 
-    val text = "Click here to see example"
+    val text = stringResource(id = R.string.watch_video_link)
     val annotatedString = AnnotatedString.Builder(text)
         .apply {
             addStyle(
                 style = SpanStyle(
                     color = Color.Blue,
-                    textDecoration = TextDecoration.Underline
+                    textDecoration = TextDecoration.Underline,
+                    fontSize = 24.sp
                 ),
                 start = 0,
                 end = text.length

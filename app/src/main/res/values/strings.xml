@@ -46,5 +46,6 @@
     <string name="exercise_info">%1\$d exercises, %2\$d total sets\n%3\$d exercises completed, %4\$d sets completed</string>
 
     <string name="set_done">Set %1$d done</string>
+    <string name="watch_video_link">Watch video</string>
 
 </resources>
