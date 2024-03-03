@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="deploymentTargetDropDown">
+    <value>
+      <entry key="TreningAppTest">
+        <State />
+      </entry>
+      <entry key="app">
+        <State>
+          <targetSelectedWithDropDown>
+            <Target>
+              <type value="QUICK_BOOT_TARGET" />
+              <deviceKey>
+                <Key>
+                  <type value="VIRTUAL_DEVICE_PATH" />
+                  <value value="C:\Users\marfo\.android\avd\Medium_Phone_API_34.avd" />
+                </Key>
+              </deviceKey>
+            </Target>
+          </targetSelectedWithDropDown>
+          <timeTargetWasSelectedWithDropDown value="2024-02-28T16:10:58.025536600Z" />
+        </State>
+      </entry>
+      <entry key="testBenchPressSetSwitches()">
+        <State />
+      </entry>
+      <entry key="testSetCompletion()">
+        <State />
+      </entry>
+      <entry key="testSetExerciseCompletionEndurance1()">
+        <State />
+      </entry>
+      <entry key="testSetExerciseCompletionStrength()">
+        <State />
+      </entry>
+    </value>
+  </component>
+</project>

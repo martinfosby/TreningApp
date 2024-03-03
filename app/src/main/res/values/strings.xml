@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">TreningApp</string>
+    <string name="bench_press_name">Bench press</string>
+    <string name="shoulder_press_name">Shoulder press</string>
+    <string name="lat_pulldown_name">Lat pulldown</string>
+    <string name="barbell_row_name">Barbell row</string>
+    <string name="bicep_curl_name">Bicep curl</string>
+    <string name="tricep_pushdown_name">Tricep pushdown</string>
+
+    <string name="light_run_name">Light run</string>
+    <string name="bicycle_name">Cycling</string>
+    <string name="rowing_name">Rowing</string>
+    <string name="swimming_name">Swimming</string>
+
+
+
+
+
+    <string name="bench_press_description">Kjør gitt antall sett med 10 repetisjoner, med økende belastning.</string>
+    <string name="shoulder_press_description">Kjør gitt antall sett med 10 repetisjoner. Lette vekter.</string>
+    <string name="lat_pulldown_description">Kjør gitt antall sett med 12 repetisjoner. Tunge vekter.</string>
+    <string name="barbell_row_description">Kjør gitt antall sett med 12 repetisjoner. Tunge vekter.</string>
+    <string name="bicep_curl_description">Kjør gitt antall sett med 12 repetisjoner. Tunge vekter.</string>
+    <string name="tricep_pushdown_description">Kjør gitt antall sett med 12 repetisjoner. Tunge vekter.</string>
+
+    <string name="light_run_description">Løp i 15–20 min rolig</string>
+    <string name="bicycle_description">Sykle i 15–20 min rolig</string>
+    <string name="rowing_description">Ro i 15–20 min rolig</string>
+    <string name="swimming_description">Swøm i 15–20 min rolig</string>
+
+
+
+
+
+    <string name="expand_button_content_description">See more or less information about a exercise.</string>
+    <string name="sets">%d sets</string>
+
+    <string name="strength">Strength</string>
+    <string name="endurance">Endurance</string>
+
+
+    <string name="exercises_sets">Total of exercises and sets: %1$d and %2$d</string>
+    <string name="exercises_completed">Exercises completed: %d</string>
+    <string name="sets_completed">Total sets completed: %d</string>
+
+    <string name="exercise_info">%1\$d exercises, %2\$d total sets\n%3\$d exercises completed, %4\$d sets completed</string>
+
+    <string name="set_done">Set %1$d done</string>
+
+</resources>
